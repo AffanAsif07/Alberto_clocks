@@ -1,0 +1,82 @@
+/* ==========================================================================
+   ALBERTO WATCH COMPANY — RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+
+@media (max-width: 1140px) {
+  .collections-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-menu {
+    display: none;
+  }
+  .mobile-toggle {
+    display: flex;
+  }
+  .hero-grid,
+  .editorial-split,
+  .calibre-diagram-box,
+  .featured-banner,
+  .stores-layout,
+  .contact-grid,
+  .product-modal-grid {
+    grid-template-columns: 1fr;
+  }
+  .editorial-split.reverse .editorial-media {
+    order: 0;
+  }
+  .hero-visual {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .store-map-panel {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --space-xl: 3.25rem;
+    --space-lg: 2.25rem;
+  }
+  .tech-grid,
+  .collections-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-metrics {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .newsletter-form {
+    flex-direction: column;
+  }
+  .lightbox-prev { left: 0.75rem; }
+  .lightbox-next { right: 0.75rem; }
+  .catalog-inputs,
+  .luxury-input,
+  .luxury-select {
+    width: 100%;
+  }
+}
+
+/* Disable Custom Cursor on Touch / Coarse Pointer Devices */
+@media (hover: none), (pointer: coarse) {
+  .cursor-dot,
+  .cursor-ring,
+  .cursor-trail-particle {
+    display: none !important;
+  }
+  html.custom-cursor-active,
+  html.custom-cursor-active * {
+    cursor: auto !important;
+  }
+}

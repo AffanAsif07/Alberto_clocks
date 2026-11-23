@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="is-loading">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Timepieces | ALBERTO Watch Company</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <style>
+    /* Safety guarantee taake product cards kabhi invisible na rahein */
+    #all-products-grid {
+      display: grid !important;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)) !important;
+      gap: 1.75rem !important;
+      min-height: 300px;
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+    #all-products-grid .product-card {
+      opacity: 1 !important;
+      transform: none;
+      visibility: visible !important;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1600&auto=format&fit=crop');"></div>
+    <div class="container page-hero-content">
+      <span class="eyebrow">Complete Manufacture Catalog</span>
+      <h1 class="page-hero-title">ALL ALBERTO TIMEPIECES</h1>
+      <p class="section-subtitle">
+        Explore and filter our complete horological collection—spanning Grand Complications, Heritage Vintage, Connected Smartwatches, Geneva Classics, and Abyss Sports.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="opacity: 1 !important; transform: none !important;">
+    <div class="container">
+      <div class="catalog-controls">
+        <div class="filter-pills">
+          <button class="filter-pill active" data-filter="all">All</button>
+          <button class="filter-pill" data-filter="luxury">Luxury</button>
+          <button class="filter-pill" data-filter="vintage">Vintage</button>
+          <button class="filter-pill" data-filter="smartwatches">Smart</button>
+          <button class="filter-pill" data-filter="classic">Classic</button>
+          <button class="filter-pill" data-filter="sports">Sports</button>
+          <button class="filter-pill" data-filter="wishlist"><i class="fa-solid fa-heart" style="color: var(--gold-champagne);"></i> Wishlist</button>
+        </div>
+
+        <div class="catalog-inputs">
+          <!-- Dynamic Available Watches Dropdown -->
+          <select id="catalog-watch-dropdown" class="luxury-select">
+            <option value="">Select Available Watch...</option>
+          </select>
+
+          <input type="text" id="catalog-search-input" class="luxury-input" placeholder="Search name, ID, calibre...">
+          
+          <select id="catalog-sort-select" class="luxury-select">
+            <option value="featured">Sort: Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name-asc">Alphabetical: A–Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="catalog-result-count" style="font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-champagne); margin-bottom: 1.5rem;">
+        Loading Timepieces...
+      </div>
+
+      <div class="products-grid" id="all-products-grid"></div>
+    </div>
+  </section>
+
+  <script src="assets/js/product-data.js"></script>
+  <script src="assets/js/utilities.js"></script>
+  <script src="assets/js/cursor.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/interactions.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+      if (typeof AlbertoCatalog !== 'undefined') {
+        new AlbertoCatalog({
+          containerId: 'all-products-grid'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

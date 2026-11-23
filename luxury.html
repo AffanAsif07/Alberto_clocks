@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="is-loading">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Watches & Grand Complications | ALBERTO Watch Company</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <section class="page-hero theme-luxury">
+    <div class="page-hero-bg" style="background-image: url('https://cdn.shopify.com/s/files/1/0686/0387/1276/articles/Why_Rotoris_Watches_Are_the_First_Choice_for_Modern_Professionals_24814450-6cbd-44bb-aa87-f81bc9f21991.jpg?v=1789990376');"></div>
+    <div class="container page-hero-content">
+      <span class="eyebrow">Haute Horlogerie • Geneva</span>
+      <h1 class="page-hero-title">LUXURY & GRAND COMPLICATIONS</h1>
+      <p class="section-subtitle">
+        Hand-assembled tourbillons, perpetual calendars, and diamond-set masterworks forged in 18k rose gold and platinum 950.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="catalog-controls">
+        <div id="catalog-result-count" style="font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-champagne);">
+          Showing 8 Luxury Timepieces
+        </div>
+        <div class="catalog-inputs">
+          <input type="text" id="catalog-search-input" class="luxury-input" placeholder="Search luxury models...">
+          <select id="catalog-sort-select" class="luxury-select">
+            <option value="featured">Sort: Featured Curations</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="name-asc">Name: A to Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="products-grid" id="luxury-products-grid"></div>
+    </div>
+  </section>
+
+  <script src="assets/js/product-data.js"></script>
+  <script src="assets/js/utilities.js"></script>
+  <script src="assets/js/cursor.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/interactions.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new AlbertoCatalog({
+        containerId: 'luxury-products-grid',
+        fixedCategory: 'luxury'
+      });
+    });
+  </script>
+</body>
+</html>

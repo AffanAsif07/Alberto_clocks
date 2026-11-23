@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="is-loading">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage Heritage Collection | ALBERTO Watch Company</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <section class="page-hero theme-vintage">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1539874754764-5a96559165b0?q=80&w=1600&auto=format&fit=crop');"></div>
+    <div class="container page-hero-content">
+      <span class="eyebrow">Heritage Archives • 1932–1965</span>
+      <h1 class="page-hero-title">VINTAGE HERITAGE EDITION</h1>
+      <p class="section-subtitle">
+        Celebrating mid-century horological romance with manual-wind column chronographs, domed Hesalite crystals, and warm patinated dials.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="catalog-controls">
+        <div id="catalog-result-count" style="font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-champagne);">
+          Showing 4 Heritage Timepieces
+        </div>
+        <div class="catalog-inputs">
+          <input type="text" id="catalog-search-input" class="luxury-input" placeholder="Search heritage models...">
+          <select id="catalog-sort-select" class="luxury-select">
+            <option value="featured">Sort: Archive Order</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="products-grid" id="vintage-products-grid"></div>
+    </div>
+  </section>
+
+  <script src="assets/js/product-data.js"></script>
+  <script src="assets/js/utilities.js"></script>
+  <script src="assets/js/cursor.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/interactions.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new AlbertoCatalog({
+        containerId: 'vintage-products-grid',
+        fixedCategory: 'vintage'
+      });
+    });
+  </script>
+</body>
+</html>

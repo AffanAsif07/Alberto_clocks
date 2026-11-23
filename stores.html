@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="is-loading">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Boutiques & Salons | ALBERTO Watch Company</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1600&auto=format&fit=crop');"></div>
+    <div class="container page-hero-content">
+      <span class="eyebrow">Private Salons Worldwide</span>
+      <h1 class="page-hero-title">BOUTIQUE LOCATOR</h1>
+      <p class="section-subtitle">
+        Experience private viewings, bespoke strap fittings, and master watchmaker consultations at our flagship global salons (sample boutique locations).
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="catalog-controls">
+        <input type="text" id="store-search-input" class="luxury-input" placeholder="Search city, street, or salon..." style="flex: 1;">
+        <select id="store-city-filter" class="luxury-select">
+          <option value="all">All Global Cities</option>
+          <option value="geneva">Geneva, Switzerland</option>
+          <option value="paris">Paris, France</option>
+          <option value="newyork">New York, USA</option>
+          <option value="tokyo">Tokyo, Japan</option>
+          <option value="dubai">Dubai, UAE</option>
+        </select>
+      </div>
+
+      <div class="stores-layout">
+        <div class="stores-list">
+          <div class="store-card active" data-city="geneva" data-title="Geneva Flagship Salon & Atelier" data-address="Rue du Rhône 42, 1204 Genève, Switzerland" data-coords="46.2044° N, 6.1432° E">
+            <span class="eyebrow" style="margin-bottom: 0.35rem;">Flagship HQ • Sample Store</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Geneva Flagship Salon & Atelier</h3>
+            <p style="color: var(--text-silver); font-size: 0.88rem; margin-bottom: 0.4rem;"><i class="fa-solid fa-location-dot" style="color: var(--gold-champagne); width: 18px;"></i> Rue du Rhône 42, 1204 Genève, Switzerland</p>
+            <p style="color: var(--text-muted); font-size: 0.84rem; margin-bottom: 0.4rem;"><i class="fa-solid fa-phone" style="color: var(--gold-champagne); width: 18px;"></i> +41 22 819 1928</p>
+            <p style="color: var(--text-muted); font-size: 0.84rem;"><i class="fa-regular fa-clock" style="color: var(--gold-champagne); width: 18px;"></i> Mon–Sat: 10:00 AM – 7:00 PM</p>
+          </div>
+
+          <div class="store-card" data-city="paris" data-title="Paris Place Vendôme Salon" data-address="18 Place Vendôme, 75001 Paris, France" data-coords="48.8675° N, 2.3294° E">
+            <span class="eyebrow" style="margin-bottom: 0.35rem;">European Flagship • Sample Store</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Paris Place Vendôme Salon</h3>
+            <p style="color: var(--text-silver); font-size: 0.88rem; margin-bottom: 0.4rem;"><i class="fa-solid fa-location-dot" style="color: var(--gold-champagne); width: 18px;"></i> 18 Place Vendôme, 75001 Paris, France</p>
+            <p style="color: var(--text-muted); font-size: 0.84rem; margin-bottom: 0.4rem;"><i class="fa-solid fa-phone" style="color: var(--gold-champagne); width: 18px;"></i> +33 1 42 60 1928</p>
+            <p style="color: var(--text-muted); font-size: 0.84rem;"><i class="fa-regular fa-clock" style="color: var(--gold-champagne); width: 18px;"></i> Mon–Sat: 10:30 AM – 7:30 PM</p>
+          </div>
+
+          <div class="store-card" data-city="newyork" data-title="New York Madison Avenue Boutique" data-address="680 Madison Avenue, New York, NY 10065" data-coords="40.7651° N, 73.9702° W">
+            <span class="eyebrow" style="margin-bottom: 0.35rem;">North America • Sample Store</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">New York Madison Avenue Boutique</h3>
+            <p style="color: var(--text-silver); font-size: 0.88rem; margin-bottom: 0.4rem;"><i class="fa-solid fa-location-dot" style="color: var(--gold-champagne); width: 18px;"></i> 680 Madison Avenue, New York, NY 10065</p>
+            <p style="color: var(--text-muted); font-size: 0.84rem; margin-bottom: 0.4rem;"><i class="fa-solid fa-phone" style="color: var(--gold-champagne); width: 18px;"></i> +1 (212) 555-1928</p>
+            <p style="color: var(--text-muted); font-size: 0.84rem;"><i class="fa-regular fa-clock" style="color: var(--gold-champagne); width: 18px;"></i> Mon–Sat: 10:00 AM – 7:00 PM | Sun: 12:00 PM – 5:00 PM</p>
+          </div>
+
+          <div class="store-card" data-city="tokyo" data-title="Tokyo Ginza Six Salon" data-address="6-10-1 Ginza, Chuo-ku, Tokyo 104-0061, Japan" data-coords="35.6696° N, 139.7640° E">
+            <span class="eyebrow" style="margin-bottom: 0.35rem;">Asia-Pacific • Sample Store</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Tokyo Ginza Six Salon</h3>
+            <p style="color: var(--text-silver); font-size: 0.88rem; margin-bottom: 0.4rem;"><i class="fa-solid fa-location-dot" style="color: var(--gold-champagne); width: 18px;"></i> 6-10-1 Ginza, Chuo-ku, Tokyo 104-0061</p>
+            <p style="color: var(--text-muted); font-size: 0.84rem; margin-bottom: 0.4rem;"><i class="fa-solid fa-phone" style="color: var(--gold-champagne); width: 18px;"></i> +81 3-5555-1928</p>
+            <p style="color: var(--text-muted); font-size: 0.84rem;"><i class="fa-regular fa-clock" style="color: var(--gold-champagne); width: 18px;"></i> Daily: 10:30 AM – 8:30 PM</p>
+          </div>
+
+          <div class="store-card" data-city="dubai" data-title="Dubai Mall Fashion Avenue Salon" data-address="Financial Center Rd, Downtown Dubai, UAE" data-coords="25.1972° N, 55.2796° E">
+            <span class="eyebrow" style="margin-bottom: 0.35rem;">Middle East • Sample Store</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Dubai Mall Fashion Avenue Salon</h3>
+            <p style="color: var(--text-silver); font-size: 0.88rem; margin-bottom: 0.4rem;"><i class="fa-solid fa-location-dot" style="color: var(--gold-champagne); width: 18px;"></i> Financial Center Rd, Downtown Dubai, UAE</p>
+            <p style="color: var(--text-muted); font-size: 0.84rem; margin-bottom: 0.4rem;"><i class="fa-solid fa-phone" style="color: var(--gold-champagne); width: 18px;"></i> +971 4 555 1928</p>
+            <p style="color: var(--text-muted); font-size: 0.84rem;"><i class="fa-regular fa-clock" style="color: var(--gold-champagne); width: 18px;"></i> Daily: 10:00 AM – 11:00 PM</p>
+          </div>
+        </div>
+
+        <div class="store-map-panel">
+          <span class="eyebrow">Interactive Boutique Radar</span>
+          <h3 id="map-selected-city" style="font-size: 1.35rem;">Geneva Flagship Salon & Atelier</h3>
+          <div class="stylized-map">
+            <div class="map-grid-lines"></div>
+            <div class="map-pin-marker">
+              <div style="width: 56px; height: 56px; border-radius: 50%; border: 1px solid var(--gold-champagne); background: rgba(201,164,92,0.16); display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
+                <i class="fa-solid fa-location-dot" style="font-size: 1.4rem; color: var(--gold-light);"></i>
+              </div>
+              <div id="map-selected-coords" style="font-size: 0.75rem; letter-spacing: 0.16em; color: var(--gold-champagne);">46.2044° N, 6.1432° E</div>
+            </div>
+          </div>
+          <p id="map-selected-address" style="font-size: 0.86rem; color: var(--text-silver); margin-bottom: 1.25rem;">
+            Rue du Rhône 42, 1204 Genève, Switzerland
+          </p>
+          <a href="contact.html" class="btn btn-primary" style="width: 100%;">Book Private Salon Appointment</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/js/product-data.js"></script>
+  <script src="assets/js/utilities.js"></script>
+  <script src="assets/js/cursor.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/interactions.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
